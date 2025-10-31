@@ -113,3 +113,21 @@ function updateLocalStorage() {
   });
   localStorage.setItem("tasks", JSON.stringify(allTasks));
 }
+
+const search = document.getElementById("searchBox");
+
+search.addEventListener("input", srchfn);
+
+function srchfn() {
+  const filter = search.value.toLowerCase();
+  const tasks = lst.getElementsByTagName("li");
+
+  for (let i = 0; i < tasks.length; i++) {
+    const newtxt = tasks[i].firstChild.textContent.toLowerCase();
+    if (newtxt.includes(filter)) {
+      tasks[i].style.display = "";
+    } else {
+      tasks[i].style.display = "none";
+    }
+  }
+}

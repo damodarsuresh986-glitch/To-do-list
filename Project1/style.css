@@ -127,3 +127,7 @@ li div {
   display: flex;
   gap: 8px;
 }
+
+#searchBox {
+  margin-top: 15px;
+}
