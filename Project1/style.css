@@ -13,6 +13,11 @@ body {
   position: relative;
 }
 
+body.dark {
+  background-color: #121212;
+  color: #e94343;
+}
+
 .container {
   background-color: rgb(235, 121, 121);
   /* text-decoration: underline; */
@@ -26,6 +31,12 @@ body {
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
+}
+
+body.dark .container {
+  background-color: #1f1f1f;
+  color: #ee4c4c;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 }
 
 .container h1 {
@@ -130,4 +141,29 @@ li div {
 
 #searchBox {
   margin-top: 15px;
+}
+
+#currentDate {
+  background-color: #22d197;
+  color: rgb(26, 17, 16);
+  font-size: 15px;
+}
+
+#currentTime {
+  background-color: #22d197;
+  color: rgb(26, 17, 16);
+  font-size: 15px;
+}
+
+#dateTime {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+small {
+  display: block;
+  font-size: 12px;
+  color: #666;
 }

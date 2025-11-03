@@ -10,10 +10,18 @@
     <div class="container">
       <h1>Todo list</h1>
       <div class="taks-btn">
+        <div id="dateTime">
+          <p id="currentDate"></p>
+          <p id="currentTime"></p>
+        </div>
         <input id="txt1" type="text" placeholder="enter the task" />
         <button id="btn1" class="btn">Add</button>
+        <button id="btn2" class="btn">Clear All</button>
       </div>
-      <input type="text" id="searchBox" placeholder="Search task" />
+      <div>
+        <input type="text" id="searchBox" placeholder="Search task" />
+        <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+      </div>
       <ul id="lst1" class="task-list"></ul>
     </div>
     <script src="script.js"></script>
